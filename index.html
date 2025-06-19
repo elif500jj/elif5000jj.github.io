@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="title">Сайт Элиф</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header, section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      margin-top: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    #language-switcher {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+
+    #language-switcher button {
+      font-size: 14px;
+      padding: 6px 10px;
+      margin-left: 5px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #222;
+      color: #fff;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Переключатель языков -->
+  <div id="language-switcher">
+    <button onclick="setLanguage('ru')">🇷🇺 RU</button>
+    <button onclick="setLanguage('en')">🇺🇸 EN</button>
+  </div>
+
+  <!-- Контент -->
+  <header>
+    <h1 data-i18n="welcome">Добро пожаловать на мой сайт!</h1>
+  </header>
+
+  <section>
+    <h2 data-i18n="about_title">Обо мне</h2>
+    <p data-i18n="about_text">
+      Меня зовут Элиф. Я создаю сайты, которые удобно смотреть на телефоне и компьютере.  
+      Если вы хотите простой и красивый сайт — напишите мне!
+    </p>
+  </section>
+
+  <section>
+    <h2 data-i18n="portfolio_title">Портфолио</h2>
+    <p data-i18n="portfolio_text">
+      Здесь вы можете посмотреть мои работы.  
+      Я делаю сайты для бизнеса, магазинов и личных проектов.
+    </p>
+  </section>
+
+  <section>
+    <h2 data-i18n="contact_title">Связаться со мной</h2>
+    <p>
+      <a href="https://t.me/@innbx0010" target="_blank" data-i18n="telegram">Написать в Telegram</a>
+    </p>
+  </section>
+
+  <!-- Подключение JS -->
+  <script src="lang.js"></script>
+</body>
+</html>

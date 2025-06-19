@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="title">Обо мне</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border-radius: 8px;
+    }
+
+    #language-switcher {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+
+    #language-switcher button {
+      font-size: 14px;
+      padding: 6px 10px;
+      margin-left: 5px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #222;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Переключатель языков -->
+  <div id="language-switcher">
+    <button onclick="setLanguage('ru')">🇷🇺 RU</button>
+    <button onclick="setLanguage('en')">🇺🇸 EN</button>
+  </div>
+
+  <div class="container">
+    <h1 data-i18n="about_title">Обо мне</h1>
+    <p data-i18n="about_text">
+      Привет! Меня зовут Элиф. Я занимаюсь созданием сайтов. Мне нравится делать проекты, которые выглядят красиво и работают на всех устройствах. Я люблю учиться, расти и помогать другим с их интернет-присутствием.
+    </p>
+
+    <p data-i18n="about_more">
+      Сейчас я развиваю свои навыки в HTML, CSS и JavaScript, а также помогаю людям запускать свои первые сайты.
+    </p>
+
+    <a class="back-button" href="index.html" data-i18n="back">← Назад на главную</a>
+  </div>
+
+  <script src="lang.js"></script>
+</body>
+</html>
